@@ -6,7 +6,7 @@
 La carte est décrite par un tableau en deux dimension.
 
 ```C
-\\ La carte du monde
+// La carte du monde
 Structure Carte:C
    int dim_x // La dimension en x de la carte
    int dim_y // La dimension en y de la carte
@@ -26,13 +26,13 @@ carte.tiles[2, 4] <- "Eau"
 ```
 
 ```C
-\\ Creation d une nouvelle carte
-\\ Paramètres:
-\\ 	int x: La dimension en x
-\\      int y: La dimension en y
-\\ Retourne: Carte
-\\ 	Retourne une nouvelle carte de dimension x par y où
-\\      toute les casses contiennent le string "sol"
+// Creation d une nouvelle carte
+// Paramètres:
+// 	int x: La dimension en x
+//      int y: La dimension en y
+// Retourne: Carte
+// 	Retourne une nouvelle carte de dimension x par y où
+//      toute les casses contiennent le string "sol"
 Fonction CreationCarte(int x, int y): Carte
    // Déclaration d une variable de type c
    Carte c 
@@ -63,28 +63,28 @@ FinFonction
 ### Affichage
 
 ```
-\\ Afficher le monde, le joueurs et les ennemis à l écran
-\\ Paramètres:
-\\      Map m: La carte du monde
-\\      Joueur j: Le joueur
-\\      Ennemis[] e: La liste des énnemis
+// Afficher le monde, le joueurs et les ennemis à l écran
+// Paramètres:
+//      Map m: La carte du monde
+//      Joueur j: Le joueur
+//      Ennemis[] e: La liste des énnemis
 Procedure AfficherMonde(Map m, Joueur j, Ennemis[] e)
 ```
 
 ```C
-\\ Affiche un message au joueur
-\\ Paramètres:
-\\ 	string message: Message à afficher
+// Affiche un message au joueur
+// Paramètres:
+// 	string message: Message à afficher
 Procedure AfficherMessage(string message)
 ```
 
 ```C
-\\ Obtenir un nombre aléatoire
-\\ Paramètres:
-\\ 	int a: valeur minimale
-\\      int b: valeur maximale
-\\ Retourne: int
-\\ 	Retourne une valeur aléatoire entre a et b inclusivement
+// Obtenir un nombre aléatoire
+// Paramètres:
+// 	int a: valeur minimale
+//      int b: valeur maximale
+// Retourne: int
+// 	Retourne une valeur aléatoire entre a et b inclusivement
 Fonction Random(int a, int b): int
 ```
 
