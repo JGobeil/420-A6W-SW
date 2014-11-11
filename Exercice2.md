@@ -62,7 +62,7 @@ FinFonction
 
 ### Affichage
 
-```
+```C
 // Afficher le monde, le joueurs et les ennemis à l écran
 // Paramètres:
 //      Map m: La carte du monde
