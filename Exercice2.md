@@ -5,7 +5,7 @@
 
 La carte est décrite par un tableau en deux dimension.
 
-```
+```Pascal
 \\ La carte du monde
 Structure Carte:
    int dim_x // La dimension en x de la carte
@@ -18,14 +18,14 @@ La fonction `CreationCarte(dim_x, dim_y)` permet de créer une nouvelle carte.
 
 Ainsi, si on veut attribuer une valeur à un carreau de la carte, par exemple à l'emplacement [2, 3].  
 
-```
+```Pascal
 Carte carte <- CreationCarte(10, 12)
 
 carte.tiles[2, 3] <- "Arbre"
 carte.tiles[2, 4] <- "Eau"
 ```
 
-```
+```Pascal
 \\ Creation d'une nouvelle carte
 \\ Paramètres:
 \\ 	int x: La dimension en x
@@ -56,13 +56,13 @@ Fonction CreationCarte(int x, int y): Carte
    // Retourner la nouvelle carte
    Retourne c
 FinFonction
-```
+``` 
 
 ## Fonction que nous allons considérer comme existantes et fonctionnelles.
 
 ### Affichage
 
-```
+```Pascal
 \\ Afficher le monde, le joueurs et les ennemis à l'écran
 \\ Paramètres:
 \\      Map m: La carte du monde
@@ -71,14 +71,14 @@ FinFonction
 Procedure AfficherMonde(Map m, Joueur j, Ennemis[] e)
 ```
 
-```
+```Pascal
 \\ Affiche un message au joueur
 \\ Paramètres:
 \\ 	string message: Message à afficher
 Procedure AfficherMessage(string message)
 ```
 
-```
+```Pascal
 \\ Obtenir un nombre aléatoire
 \\ Paramètres:
 \\ 	int a: valeur minimale
