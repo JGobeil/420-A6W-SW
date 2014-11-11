@@ -7,7 +7,7 @@ La carte est décrite par un tableau en deux dimension.
 
 ```C
 \\ La carte du monde
-Structure Carte:
+Structure Carte:C
    int dim_x // La dimension en x de la carte
    int dim_y // La dimension en y de la carte
    string[,] tiles // Un tableau 2D de string.
@@ -16,9 +16,9 @@ FinStructure
 
 La fonction `CreationCarte(dim_x, dim_y)` permet de créer une nouvelle carte.
 
-Ainsi, si on veut attribuer une valeur à un carreau de la carte, par exemple à l'emplacement [2, 3].  
+Ainsi, si on veut attribuer une valeur à un carreau de la carte, par exemple à l emplacement [2, 3].  
 
-```
+```C
 Carte carte <- CreationCarte(10, 12)
 
 carte.tiles[2, 3] <- "Arbre"
@@ -26,7 +26,7 @@ carte.tiles[2, 4] <- "Eau"
 ```
 
 ```C
-\\ Creation d'une nouvelle carte
+\\ Creation d une nouvelle carte
 \\ Paramètres:
 \\ 	int x: La dimension en x
 \\      int y: La dimension en y
@@ -34,7 +34,7 @@ carte.tiles[2, 4] <- "Eau"
 \\ 	Retourne une nouvelle carte de dimension x par y où
 \\      toute les casses contiennent le string "sol"
 Fonction CreationCarte(int x, int y): Carte
-   // Déclaration d'une variable de type c
+   // Déclaration d une variable de type c
    Carte c 
    
    // Assigner x à la dimension en x de la carte
@@ -43,7 +43,7 @@ Fonction CreationCarte(int x, int y): Carte
    // Assigner y à la dimension en y de la carte
    c.dim_y <- y
 
-   // Création d'un tableau de string de dimension [x,y]
+   // Création d un tableau de string de dimension [x,y]
    c.tiles <- string[x, y]
 
    // Mettre dans chaque entrée du tableau, la valeur "sol"
@@ -63,7 +63,7 @@ FinFonction
 ### Affichage
 
 ```
-\\ Afficher le monde, le joueurs et les ennemis à l'écran
+\\ Afficher le monde, le joueurs et les ennemis à l écran
 \\ Paramètres:
 \\      Map m: La carte du monde
 \\      Joueur j: Le joueur
